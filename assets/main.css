@@ -1,0 +1,145 @@
+* {
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #0067DA;
+    color: #FFF;
+    margin-bottom: 32px;
+}
+
+header .container {
+    padding: 1em 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+header nav a {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 16px;
+}
+
+.content main {
+    width: 100%;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.about img{
+    width: 400px;
+    margin-right: 32px;
+}
+
+h2 {
+    color: #0067DA;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #0067DA;
+    margin-bottom: 24px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    margin-bottom: 32px;
+}
+
+.products .sneaker img {
+    max-width: 100%;
+}
+
+.products .sneaker h3 {
+    margin: 8px 0;
+}
+
+.products .sneaker p {
+    font-size: .9em;
+    margin-bottom: 8px;
+}
+
+.products .sneaker button {
+    background-color: #0067DA;
+    width: 100%;
+    color: #FFF;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sneaker {
+        width: 90%;
+        margin: 16px 0;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container {
+        width: 90%;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        margin-bottom: 32px;
+    }
+
+    .sneaker {
+        margin: 32px 0;
+    }
+}
